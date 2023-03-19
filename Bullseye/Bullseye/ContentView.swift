@@ -84,8 +84,6 @@ struct ContentView: View {
     func scoringMessage()->String{
         return "The slider's value is \(self.sliderValueRounded)\n"+" you scored \(pointsForCurrentRound())"+" points for this round"
     }
-    
-    
 }
 
 #if DEBUG
