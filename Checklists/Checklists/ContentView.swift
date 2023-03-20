@@ -7,22 +7,42 @@
 
 import SwiftUI
 
+struct CheckListItem: Identifiable{
+    let id = UUID()
+    var name: String
+    var isChecked: Bool = false
+}
+
 struct ContentView: View {
     
-    @State var checklistItems = ["Walk the dog","Brush my teeth","Learn iOS development","Soccer practice","Eat ice cream"]
+    @State var checklistItems = [
+        CheckListItem(name: "Walk the dog"),
+        CheckListItem(name: "Brush my teeth"),
+        CheckListItem(name: "Learn iOS development", isChecked: true),
+        CheckListItem(name: "Walk the dog", isChecked: true),
+        CheckListItem(name: "Soccer practice"),
+        CheckListItem(name: "Eat ice cream", isChecked: true)]
     
     let indexesToRemove = IndexSet(integersIn: 0...2)
     
     var body: some View {
         NavigationView {
             List{
-                ForEach(checklistItems, id: \.self){item in
-                    Text(item).onTapGesture {
-                        checklistItems.remove(atOffsets: indexesToRemove)
-                        showChecklistContent()
+                ForEach(checklistItems){item in
+                    HStack{
+                        Text(item.name)
+                        Spacer()
+                        Text(item.isChecked ? "✅":"🔲")
+                    }.background(.white)
+                    .onTapGesture {
+                        if let index = checklistItems.firstIndex(where: {$0.id == item.id}){
+                            checklistItems[index].isChecked.toggle()
+                            showChecklistContent()
+                        }
                     }
                 }.onDelete(perform: deleteListItem)
                     .onMove(perform: moveListItem)
+                    
             }
             .navigationBarItems(trailing: EditButton())
             .navigationBarTitle("Checklist")
