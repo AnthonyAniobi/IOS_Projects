@@ -13,15 +13,10 @@ class Checklist: ObservableObject{
     init(){
         print("Document directory is: \(documentDirectory())")
         print("File path is: \(dataFilePath())")
+        loadListItems()
     }
     
-    @Published var item = [
-        CheckListItem(name: "Walk the dog"),
-        CheckListItem(name: "Brush my teeth"),
-        CheckListItem(name: "Learn iOS development", isChecked: true),
-        CheckListItem(name: "Walk the dog", isChecked: true),
-        CheckListItem(name: "Soccer practice"),
-        CheckListItem(name: "Eat ice cream", isChecked: true)]
+    @Published var item = []
 
     
     func showChecklistContent(){
@@ -33,10 +28,12 @@ class Checklist: ObservableObject{
     func deleteListItem(whichElement: IndexSet){
         item.remove(atOffsets: whichElement)
         showChecklistContent()
+        saveListItems()
     }
     
     func moveListItem(whichElement: IndexSet, destination:Int){
         item.move(fromOffsets: whichElement, toOffset: destination)
+        saveListItems()
     }
     
     func documentDirectory() -> URL{
@@ -46,5 +43,27 @@ class Checklist: ObservableObject{
     
     func dataFilePath() -> URL {
         return documentDirectory().appendingPathComponent("Checklist.plist")
+    }
+    
+    func saveListItems(){
+        let encoder = PropertyListEncoder()
+        do{
+            let data = try encoder.encode(item)
+            try data.write(to: dataFilePath(), options: Data.WritingOptions.atomic)
+        }catch{
+            print("Error encoding items")
+        }
+    }
+    
+    func loadListItems(){
+        let path = dataFilePath()
+        if let data = try? Data(contentsOf: path){
+            let decoder = PropertyListDecoder()
+            do{
+                item = try decoder.decode([CheckListItem].self, from: data)
+            }catch{
+                print("Error decoding item array: \(error.localizedDescription)")
+            }
+        }
     }
 }
