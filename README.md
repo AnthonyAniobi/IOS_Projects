@@ -3,8 +3,9 @@
 This project contains project build using swift ios.
 
 The list of projects are
--[x] Bullseye Game
--[x] Checklist App
+-[x] Bullseye Game Swift UI
+-[x] Checklist App Swift UI
+-[ ] Bullseye Game UI kit
 
 
 ### Screenshots
