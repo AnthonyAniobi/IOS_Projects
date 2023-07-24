@@ -7,27 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		927E6E2F29CDAA64001671C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E6E2E29CDAA64001671C7 /* AppDelegate.swift */; };
-		927E6E3129CDAA64001671C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E6E3029CDAA64001671C7 /* SceneDelegate.swift */; };
-		927E6E3329CDAA64001671C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E6E3229CDAA64001671C7 /* ViewController.swift */; };
-		927E6E3629CDAA64001671C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927E6E3429CDAA64001671C7 /* Main.storyboard */; };
-		927E6E3829CDAA69001671C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 927E6E3729CDAA69001671C7 /* Assets.xcassets */; };
-		927E6E3B29CDAA69001671C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927E6E3929CDAA69001671C7 /* LaunchScreen.storyboard */; };
+		92BBADF12A6E9BEA00DB50F2 /* Expence_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BBADF02A6E9BEA00DB50F2 /* Expence_TrackerApp.swift */; };
+		92BBADF32A6E9BEA00DB50F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BBADF22A6E9BEA00DB50F2 /* ContentView.swift */; };
+		92BBADF52A6E9BF000DB50F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92BBADF42A6E9BF000DB50F2 /* Assets.xcassets */; };
+		92BBADF82A6E9BF000DB50F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92BBADF72A6E9BF000DB50F2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		927E6E2B29CDAA64001671C7 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		927E6E2E29CDAA64001671C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		927E6E3029CDAA64001671C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		927E6E3229CDAA64001671C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		927E6E3529CDAA64001671C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		927E6E3729CDAA69001671C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		927E6E3A29CDAA69001671C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		927E6E3C29CDAA69001671C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92BBADED2A6E9BEA00DB50F2 /* Expence Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expence Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BBADF02A6E9BEA00DB50F2 /* Expence_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expence_TrackerApp.swift; sourceTree = "<group>"; };
+		92BBADF22A6E9BEA00DB50F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92BBADF42A6E9BF000DB50F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92BBADF72A6E9BF000DB50F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		927E6E2829CDAA64001671C7 /* Frameworks */ = {
+		92BBADEA2A6E9BEA00DB50F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		927E6E2229CDAA64001671C7 = {
+		92BBADE42A6E9BEA00DB50F2 = {
 			isa = PBXGroup;
 			children = (
-				927E6E2D29CDAA64001671C7 /* Bullseye */,
-				927E6E2C29CDAA64001671C7 /* Products */,
+				92BBADEF2A6E9BEA00DB50F2 /* Expence Tracker */,
+				92BBADEE2A6E9BEA00DB50F2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		927E6E2C29CDAA64001671C7 /* Products */ = {
+		92BBADEE2A6E9BEA00DB50F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				927E6E2B29CDAA64001671C7 /* Bullseye.app */,
+				92BBADED2A6E9BEA00DB50F2 /* Expence Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		927E6E2D29CDAA64001671C7 /* Bullseye */ = {
+		92BBADEF2A6E9BEA00DB50F2 /* Expence Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				927E6E2E29CDAA64001671C7 /* AppDelegate.swift */,
-				927E6E3029CDAA64001671C7 /* SceneDelegate.swift */,
-				927E6E3229CDAA64001671C7 /* ViewController.swift */,
-				927E6E3429CDAA64001671C7 /* Main.storyboard */,
-				927E6E3729CDAA69001671C7 /* Assets.xcassets */,
-				927E6E3929CDAA69001671C7 /* LaunchScreen.storyboard */,
-				927E6E3C29CDAA69001671C7 /* Info.plist */,
+				92BBADF02A6E9BEA00DB50F2 /* Expence_TrackerApp.swift */,
+				92BBADF22A6E9BEA00DB50F2 /* ContentView.swift */,
+				92BBADF42A6E9BF000DB50F2 /* Assets.xcassets */,
+				92BBADF62A6E9BF000DB50F2 /* Preview Content */,
 			);
-			path = Bullseye;
+			path = "Expence Tracker";
+			sourceTree = "<group>";
+		};
+		92BBADF62A6E9BF000DB50F2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92BBADF72A6E9BF000DB50F2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		927E6E2A29CDAA64001671C7 /* Bullseye */ = {
+		92BBADEC2A6E9BEA00DB50F2 /* Expence Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 927E6E3F29CDAA69001671C7 /* Build configuration list for PBXNativeTarget "Bullseye" */;
+			buildConfigurationList = 92BBADFB2A6E9BF000DB50F2 /* Build configuration list for PBXNativeTarget "Expence Tracker" */;
 			buildPhases = (
-				927E6E2729CDAA64001671C7 /* Sources */,
-				927E6E2829CDAA64001671C7 /* Frameworks */,
-				927E6E2929CDAA64001671C7 /* Resources */,
+				92BBADE92A6E9BEA00DB50F2 /* Sources */,
+				92BBADEA2A6E9BEA00DB50F2 /* Frameworks */,
+				92BBADEB2A6E9BEA00DB50F2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Bullseye;
-			productName = Bullseye;
-			productReference = 927E6E2B29CDAA64001671C7 /* Bullseye.app */;
+			name = "Expence Tracker";
+			productName = "Expence Tracker";
+			productReference = 92BBADED2A6E9BEA00DB50F2 /* Expence Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		927E6E2329CDAA64001671C7 /* Project object */ = {
+		92BBADE52A6E9BEA00DB50F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					927E6E2A29CDAA64001671C7 = {
+					92BBADEC2A6E9BEA00DB50F2 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 927E6E2629CDAA64001671C7 /* Build configuration list for PBXProject "Bullseye" */;
+			buildConfigurationList = 92BBADE82A6E9BEA00DB50F2 /* Build configuration list for PBXProject "Expence Tracker" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,63 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 927E6E2229CDAA64001671C7;
-			productRefGroup = 927E6E2C29CDAA64001671C7 /* Products */;
+			mainGroup = 92BBADE42A6E9BEA00DB50F2;
+			productRefGroup = 92BBADEE2A6E9BEA00DB50F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				927E6E2A29CDAA64001671C7 /* Bullseye */,
+				92BBADEC2A6E9BEA00DB50F2 /* Expence Tracker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		927E6E2929CDAA64001671C7 /* Resources */ = {
+		92BBADEB2A6E9BEA00DB50F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927E6E3B29CDAA69001671C7 /* LaunchScreen.storyboard in Resources */,
-				927E6E3829CDAA69001671C7 /* Assets.xcassets in Resources */,
-				927E6E3629CDAA64001671C7 /* Main.storyboard in Resources */,
+				92BBADF82A6E9BF000DB50F2 /* Preview Assets.xcassets in Resources */,
+				92BBADF52A6E9BF000DB50F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		927E6E2729CDAA64001671C7 /* Sources */ = {
+		92BBADE92A6E9BEA00DB50F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927E6E3329CDAA64001671C7 /* ViewController.swift in Sources */,
-				927E6E2F29CDAA64001671C7 /* AppDelegate.swift in Sources */,
-				927E6E3129CDAA64001671C7 /* SceneDelegate.swift in Sources */,
+				92BBADF32A6E9BEA00DB50F2 /* ContentView.swift in Sources */,
+				92BBADF12A6E9BEA00DB50F2 /* Expence_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		927E6E3429CDAA64001671C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				927E6E3529CDAA64001671C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		927E6E3929CDAA69001671C7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				927E6E3A29CDAA69001671C7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		927E6E3D29CDAA69001671C7 /* Debug */ = {
+		92BBADF92A6E9BF000DB50F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		927E6E3E29CDAA69001671C7 /* Release */ = {
+		92BBADFA2A6E9BF000DB50F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,19 +259,19 @@
 			};
 			name = Release;
 		};
-		927E6E4029CDAA69001671C7 /* Debug */ = {
+		92BBADFC2A6E9BF000DB50F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Expence Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bullseye/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +279,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Bullseye;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Expence-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,19 +287,19 @@
 			};
 			name = Debug;
 		};
-		927E6E4129CDAA69001671C7 /* Release */ = {
+		92BBADFD2A6E9BF000DB50F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Expence Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bullseye/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Bullseye;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Expence-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		927E6E2629CDAA64001671C7 /* Build configuration list for PBXProject "Bullseye" */ = {
+		92BBADE82A6E9BEA00DB50F2 /* Build configuration list for PBXProject "Expence Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				927E6E3D29CDAA69001671C7 /* Debug */,
-				927E6E3E29CDAA69001671C7 /* Release */,
+				92BBADF92A6E9BF000DB50F2 /* Debug */,
+				92BBADFA2A6E9BF000DB50F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		927E6E3F29CDAA69001671C7 /* Build configuration list for PBXNativeTarget "Bullseye" */ = {
+		92BBADFB2A6E9BF000DB50F2 /* Build configuration list for PBXNativeTarget "Expence Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				927E6E4029CDAA69001671C7 /* Debug */,
-				927E6E4129CDAA69001671C7 /* Release */,
+				92BBADFC2A6E9BF000DB50F2 /* Debug */,
+				92BBADFD2A6E9BF000DB50F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 927E6E2329CDAA64001671C7 /* Project object */;
+	rootObject = 92BBADE52A6E9BEA00DB50F2 /* Project object */;
 }
