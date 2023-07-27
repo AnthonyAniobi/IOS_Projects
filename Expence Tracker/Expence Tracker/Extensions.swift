@@ -14,3 +14,20 @@ extension Color {
     static let text = Color("Text")
     static let systemBackground = Color(uiColor: .systemBackground)
 }
+
+
+extension DateFormatter{
+    static let allNumericUSA: DateFormatter = {
+        let formater = DateFormatter()
+        formater.dateFormat = "MM/dd/yyyy"
+        return formater
+    }()
+}
+
+
+extension String{
+    func dateParsed()->Date{
+        guard let parsedDate = DateFormatter.allNumericUSA.date(from: self) else{return Date()}
+        return parsedDate
+    }
+}
