@@ -1,6 +1,6 @@
-# IOS Apprentice
+# IOS Projects
 
-This project contains project build using swift ios.
+This project contains my opensource projects build using swift ios.
 
 The list of projects are -[x] Bullseye Game Swift UI -[x] Checklist App Swift UI -[ ] Bullseye Game UI kit -[x] Ios Academy Application -[ ] Expence Tracker application
 
