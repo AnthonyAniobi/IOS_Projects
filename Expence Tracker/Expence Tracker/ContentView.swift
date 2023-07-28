@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 struct ContentView: View {
+    @EnvironmentObject var transactionListVM : TransactionListViewModel
+    
     var body: some View {
         NavigationView{
             ScrollView{
@@ -16,9 +19,27 @@ struct ContentView: View {
                     Text("Overview")
                         .font(.title2)
                         .bold()
+                    let data = transactionListVM.accumulateTransactions()
+                    if(!data.isEmpty){
+                        let totalExpenses = data.last?.1 ?? 0
+                        // MARK: line chart
+                        CardView {
+                            VStack (alignment:.leading) {
+                                ChartLabel(totalExpenses.formatted(.currency(code: "USD")),type: .title)
+                                LineChart()
+                            }
+                            .background(Color.systemBackground)
+                                
+                        }.data(data)
+                            .chartStyle(ChartStyle(backgroundColor: .systemBackground, foregroundColor: ColorGradient(.icon.opacity(0.4), .icon)))
+                            .frame(height: 300)
+                    }
+                    
+                    RecentTransactionList()
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
+                
             }
             .background(Color.background)
             .navigationBarTitleDisplayMode(.inline)
@@ -32,13 +53,23 @@ struct ContentView: View {
             }
         }
         .navigationViewStyle(.stack)
+        .accentColor(.primary)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let transactionListVM: TransactionListViewModel = {
+        let transactionListVM = TransactionListViewModel()
+        transactionListVM.transactions = transactionListPreviewData
+        return transactionListVM
+    }()
     static var previews: some View {
-        ContentView()
-        ContentView()
-            .preferredColorScheme(.dark)
+        Group{
+            ContentView()
+            ContentView()
+                .preferredColorScheme(.dark)
+        }
+        .environmentObject(transactionListVM)
+        
     }
 }
