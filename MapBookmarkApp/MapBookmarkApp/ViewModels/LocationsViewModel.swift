@@ -7,7 +7,7 @@
 
 import Foundation
 import MapKit
-import _MapKit_SwiftUI
+import SwiftUI
 
 class LocationsViewModel: ObservableObject{
     @Published var locations: [Location] = []
@@ -18,6 +18,9 @@ class LocationsViewModel: ObservableObject{
     }
     @Published var mapPosition: MapCameraPosition = MapCameraPosition.automatic
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    
+    // show list of locations
+    @Published var showLocationList: Bool = false
     
     
     init(){
@@ -35,5 +38,11 @@ class LocationsViewModel: ObservableObject{
                 span: mapSpan,
             )
         )
+    }
+    
+    func toggleLocationsList() {
+        withAnimation(.easeInOut){
+            showLocationList.toggle()
+        }
     }
 }
