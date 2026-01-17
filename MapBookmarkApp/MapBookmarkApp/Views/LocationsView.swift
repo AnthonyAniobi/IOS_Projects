@@ -29,6 +29,7 @@ struct LocationsView: View {
                 .background(.thickMaterial)
                 .cornerRadius(10)
                 .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y:15)
+                .padding()
                 
                 
                 Spacer()
