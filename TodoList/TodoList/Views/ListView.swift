@@ -16,6 +16,7 @@ struct ListView: View {
         ZStack{
             if listViewModel.items.isEmpty {
                 NoItemsView()
+                    .transition(.opacity)
             }else {
                 List{
                     ForEach(listViewModel.items){ item in
