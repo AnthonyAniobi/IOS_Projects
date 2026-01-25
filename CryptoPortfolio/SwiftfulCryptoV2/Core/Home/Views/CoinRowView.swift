@@ -47,7 +47,7 @@ extension CoinRowView {
             
             Text("\(coin.symbol.uppercased())")
                 .font(.headline)
-                .padding()
+                .padding(.leading)
                 .foregroundColor(Color.theme.accent)
         }
     }
@@ -61,6 +61,7 @@ extension CoinRowView {
         }
         .foregroundColor(Color.theme.accent)
     }
+    
     
     private var rightColumn: some View {
         VStack (alignment: .trailing) {

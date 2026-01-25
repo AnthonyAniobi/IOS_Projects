@@ -14,6 +14,7 @@ struct SwiftfulCryptoV2App: App {
             NavigationStack{
                 HomeView()
             }
+            .environmentObject(HomeViewModel())
         }
     }
 }
